@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "ipython-cell-cache"
 version = "0.1.0"
-description = ""
+description = "Decorators for class methods and functions that aloow you to calculate cache only once while ipython cell running"
 authors = ["azhig <azhig.dev@gmail.com>"]
 readme = "README.md"
-packages = [{include = "ipython_cell_cache"}]
+packages = [{ include = "ipython_cell_cache" }]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.6"
 
 
 [build-system]
