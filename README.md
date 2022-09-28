@@ -1,6 +1,6 @@
 # Create cache, that active in running cell only
 In some cases you need to create cache from some functions, but it should be updated each time cell of ipython notebook is started to run. For example you have functions, that made some SQL query to database, but you don't want to make same queries for many time while running some code in one cell, but you know, that data in database can be updated, when you'll run cell for next time. In this case you create cachable function, which is calculated each time the cell is running. 
-
+With this module you can use decorator for cachable methods in class and standalone functions, running in current Jupyter Notebook cell or python application.
 
 ## Examples of usage:
 
@@ -66,9 +66,5 @@ class myclass:
 **NOTE**
 
 This code mostly took from functools utils.
-This module make decorator for cachable methods in class and standalone functions, running in current
-Jupyter Notebook cell or python application.
-For standalone method you can use 'cache_function_for_cell', for class method - 'cache_method_for_cell'
-
 
 ---
